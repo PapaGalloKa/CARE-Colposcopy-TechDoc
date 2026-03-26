@@ -109,12 +109,12 @@ Suite d'outils d'annotation avec mesures en millimetres : cercles pour delimiter
 
 ---
 
-### 3.9 Annotation medicale — outils complets
-Barre d'outils complete : Cercle, Ligne, Dessin libre, Rectangle, Mesures, Texte. Palette de couleurs (rouge, bleu, vert, jaune, noir) et epaisseur de trait parametrables. Ici : annotation textuelle « lesion 1 » avec rectangle de delimitation et mesures.
+### 3.9 Selection des images pour le rapport
+Apres annotation, retour a la galerie d'examen avec les 2 images selectionnees (originale et annotee). L'image annotee affiche les mesures et marqueurs. Selection multiple pour inclure les images dans le rapport PDF via le bouton « Report ».
 
 `[INSERER : assets_v2/screenshots/09_annotation_tools.png]`
 
-![Annotation outils](assets_v2/screenshots/09_annotation_tools.png)
+![Selection images rapport](assets_v2/screenshots/09_annotation_tools.png)
 
 ---
 

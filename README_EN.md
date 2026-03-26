@@ -109,12 +109,12 @@ Annotation toolset with millimeter measurements: circles to delineate areas of i
 
 ---
 
-### 3.9 Medical Annotation — Complete Tools
-Full toolbar: Circle, Line, Freehand Drawing, Rectangle, Measurements, Text. Color palette (red, blue, green, yellow, black) and configurable stroke width. Shown here: text annotation "lesion 1" with bounding rectangle and measurements.
+### 3.9 Image Selection for Report
+After annotation, return to the exam gallery with 2 selected images (original and annotated). The annotated image displays measurements and markers. Multiple selection to include images in the PDF report via the "Report" button.
 
 `[INSERT: assets_v2/screenshots/09_annotation_tools.png]`
 
-![Annotation Tools](assets_v2/screenshots/09_annotation_tools.png)
+![Image Selection for Report](assets_v2/screenshots/09_annotation_tools.png)
 
 ---
 
