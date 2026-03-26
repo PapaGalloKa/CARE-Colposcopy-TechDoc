@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="C.A.R.E Logo" width="200"/>
+  <img src="assets_v2/logo.png" alt="C.A.R.E Logo" width="200"/>
 </p>
 
 <h1 align="center">C.A.R.E Colposcopy</h1>
@@ -29,9 +29,9 @@ The application is designed for deployment on clinical smartphones and tablets a
 
 The video below presents a complete demonstration of the application, showing the entire user journey:
 
-**[Watch the video demonstration](assets/demo.mp4)**
+**[Watch the video demonstration](assets_v2/demo.mp4)**
 
-> *Duration: 5 minutes | Complete application walkthrough: login, patient management, image capture with green filter, medical annotation, report generation, statistics.*
+> *Duration: 4 min 30 | Complete walkthrough: login, patient management, image capture with green filter, medical annotation, PDF report generation, statistics, settings.*
 
 ---
 
@@ -40,108 +40,171 @@ The video below presents a complete demonstration of the application, showing th
 ### 3.1 Login Page
 Secure authentication with multi-role management (Super Admin, Admin, Doctor, Assistant). Professional medical interface with C.A.R.E branding.
 
-`[INSERT: assets/screenshots/01_login.png]`
+`[INSERT: assets_v2/screenshots/01_login.png]`
 
-![Login Page](assets/screenshots/01_login.png)
+![Login Page](assets_v2/screenshots/01_login.png)
 
 ---
 
 ### 3.2 Dashboard
-Personalized home screen displaying the practitioner's name, specialty, and quick access to main functions: New Exam, Patients, Reports, Statistics. Recent examinations list at the bottom.
+Personalized home screen displaying the connected practitioner's name (Dr. Aissatou Diallo — Gynecology), with quick access to main functions: New Exam, Patients, Reports, Statistics. Recent examinations list at the bottom.
 
-`[INSERT: assets/screenshots/02_home.png]`
+`[INSERT: assets_v2/screenshots/02_home.png]`
 
-![Dashboard](assets/screenshots/02_home.png)
-
----
-
-### 3.3 Patient List
-Complete patient registry with real-time search, medical record number (MRN) display, date of birth, and personalized avatars. Quick-add button for new patients.
-
-`[INSERT: assets/screenshots/03_patient_list.png]`
-
-![Patient List](assets/screenshots/03_patient_list.png)
+![Dashboard](assets_v2/screenshots/02_home.png)
 
 ---
 
-### 3.4 Camera Interface with Medical Green Filter
-Real-time colposcopic image capture. The **medical green filter** (OpenGL ES 3.0 GPU shader) amplifies the green channel to better visualize cervical vascular patterns — the digital equivalent of the optical green filter used in traditional colposcopy. Adjustable exposure, zoom, and filter intensity controls.
+### 3.3 Patient Selection
+Complete patient registry with real-time search by name or medical record number (MRN). Displays avatars, dates of birth, and identifiers. Quick-add button for new patients.
 
-`[INSERT: assets/screenshots/04_camera_green_filter.png]`
+`[INSERT: assets_v2/screenshots/03_patient_list.png]`
 
-![Camera with Green Filter](assets/screenshots/04_camera_green_filter.png)
-
----
-
-### 3.5 Exam Gallery
-View of images captured during an examination. Multiple selection for group annotation or report generation. Image count and examination date display.
-
-`[INSERT: assets/screenshots/05_exam_gallery.png]`
-
-![Exam Gallery](assets/screenshots/05_exam_gallery.png)
+![Patient Selection](assets_v2/screenshots/03_patient_list.png)
 
 ---
 
-### 3.6 Medical Annotation Tools
-Complete annotation toolset: circle, line, freehand drawing, rectangle, measurements (in mm), and text. Configurable color palette and stroke width. Integrated **AI Analysis** button for automatic lesion detection.
+### 3.4 Camera Interface — Normal View
+Real-time colposcopic image capture with side controls: LED (lighting), Green Filter, Zoom, Exposure. Status bar at the bottom showing mode, captured image count, and patient MRN.
 
-`[INSERT: assets/screenshots/06_annotation.png]`
+`[INSERT: assets_v2/screenshots/04_camera.png]`
 
-![Medical Annotation](assets/screenshots/06_annotation.png)
-
----
-
-### 3.7 Report Generation
-Structured colposcopic report generation form: patient information, clinical indication, cervical appearance, transformation zone, acetic acid and iodine findings, vascular patterns, impressions, biopsy, and recommendations.
-
-`[INSERT: assets/screenshots/07_report_generation.png]`
-
-![Report Generation](assets/screenshots/07_report_generation.png)
+![Camera Normal View](assets_v2/screenshots/04_camera.png)
 
 ---
 
-### 3.8 Generated PDF Report
-Preview of the automatically generated PDF report, including patient information, clinical findings, and annotated images. Professional format with C.A.R.E header.
+### 3.5 Camera Interface — Medical Green Filter
+The **medical green filter** (OpenGL ES 3.0 GPU shader) amplifies the green channel to better visualize cervical vascular patterns — the digital equivalent of the optical green filter used in traditional colposcopy. Real-time adjustable filter intensity slider (Green Level).
 
-`[INSERT: assets/screenshots/08_report_pdf.png]`
+`[INSERT: assets_v2/screenshots/05_camera_green_filter.png]`
 
-![PDF Report](assets/screenshots/08_report_pdf.png)
-
----
-
-### 3.9 Patient Detail Record
-Complete patient record with tabs: Contact Information, Medical Information (allergies, medications, history), Gynecological Information (last menstrual period, pregnancy status, contraceptive method). Direct access to the patient's image gallery and reports.
-
-`[INSERT: assets/screenshots/09_patient_detail.png]`
-
-![Patient Detail](assets/screenshots/09_patient_detail.png)
+![Camera Green Filter](assets_v2/screenshots/05_camera_green_filter.png)
 
 ---
 
-### 3.10 Statistics and Charts
-Analytical dashboards with: lesion type distribution (donut chart), AI confidence trends (time series), patient age distribution (histogram). Actionable data for epidemiological monitoring.
+### 3.6 Image Capture
+After taking a photo, a thumbnail appears at the bottom right confirming the capture. The image counter is updated in real-time in the status bar.
 
-`[INSERT: assets/screenshots/10_statistics.png]`
+`[INSERT: assets_v2/screenshots/06_camera_capture.png]`
 
-![Statistics](assets/screenshots/10_statistics.png)
-
----
-
-### 3.11 User Profile
-Practitioner profile management: email, department, specialization, medical license number. Secure password change functionality.
-
-`[INSERT: assets/screenshots/11_profile.png]`
-
-![User Profile](assets/screenshots/11_profile.png)
+![Image Capture](assets_v2/screenshots/06_camera_capture.png)
 
 ---
 
-### 3.12 Navigation Menu
-Side navigation drawer with quick access to all application sections. Connected practitioner identification and role display. Logout option.
+### 3.7 Exam Gallery
+View of images captured during an examination. Multiple selection for group annotation or report generation. Action buttons: Annotate, Report, Delete.
 
-`[INSERT: assets/screenshots/12_navigation_drawer.png]`
+`[INSERT: assets_v2/screenshots/07_exam_gallery.png]`
 
-![Navigation Menu](assets/screenshots/12_navigation_drawer.png)
+![Exam Gallery](assets_v2/screenshots/07_exam_gallery.png)
+
+---
+
+### 3.8 Medical Annotation — Measurements
+Annotation toolset with millimeter measurements: circles to delineate areas of interest, measurement lines, and markers. Integrated **AI Analysis** button.
+
+`[INSERT: assets_v2/screenshots/08_annotation.png]`
+
+![Annotation Measurements](assets_v2/screenshots/08_annotation.png)
+
+---
+
+### 3.9 Medical Annotation — Complete Tools
+Full toolbar: Circle, Line, Freehand Drawing, Rectangle, Measurements, Text. Color palette (red, blue, green, yellow, black) and configurable stroke width. Shown here: text annotation "lesion 1" with bounding rectangle and measurements.
+
+`[INSERT: assets_v2/screenshots/09_annotation_tools.png]`
+
+![Annotation Tools](assets_v2/screenshots/09_annotation_tools.png)
+
+---
+
+### 3.10 Report Generation
+Structured colposcopic report form: patient information (name, DOB, MRN, phone, email), clinical indication, cervical appearance, transformation zone (type 1/2/3), acetic acid and iodine findings, vascular patterns.
+
+`[INSERT: assets_v2/screenshots/10_report_generation.png]`
+
+![Report Generation](assets_v2/screenshots/10_report_generation.png)
+
+---
+
+### 3.11 Generated PDF Report
+Preview of the automatically generated PDF report in C.A.R.E format. Contains patient information, clinical findings, and annotated images. Opens directly in the browser.
+
+`[INSERT: assets_v2/screenshots/11_report_pdf.png]`
+
+![PDF Report](assets_v2/screenshots/11_report_pdf.png)
+
+---
+
+### 3.12 Patient Detail Record
+Complete patient record with Info / Gallery / Reports tabs. Contact information, medical information (allergies, medications, history), gynecological information. "Start Examination" button to directly launch a colposcopy.
+
+`[INSERT: assets_v2/screenshots/12_patient_detail.png]`
+
+![Patient Detail](assets_v2/screenshots/12_patient_detail.png)
+
+---
+
+### 3.13 Patient Gallery
+Gallery tab of the patient record showing all images captured during various examinations, with thumbnails and visible annotations.
+
+`[INSERT: assets_v2/screenshots/13_patient_gallery.png]`
+
+![Patient Gallery](assets_v2/screenshots/13_patient_gallery.png)
+
+---
+
+### 3.14 Patient Reports
+Access to generated reports for a patient with options: Open, Share, Delete.
+
+`[INSERT: assets_v2/screenshots/14_patient_report.png]`
+
+![Patient Reports](assets_v2/screenshots/14_patient_report.png)
+
+---
+
+### 3.15 Patient Record Editing
+Complete editing form for gynecological information: last menstrual period, pregnancy status, contraceptive method, previous Pap smear, previous colposcopy, family history of cancer.
+
+`[INSERT: assets_v2/screenshots/15_edit_patient.png]`
+
+![Edit Patient](assets_v2/screenshots/15_edit_patient.png)
+
+---
+
+### 3.16 Statistics
+Analytical dashboards: counters (patients, exams, abnormality rate), examinations by month (bar chart), lesion distribution (donut chart), AI confidence trends, age distribution.
+
+`[INSERT: assets_v2/screenshots/16_statistics.png]`
+
+![Statistics](assets_v2/screenshots/16_statistics.png)
+
+---
+
+### 3.17 Settings
+Application configuration: language (French/English), image quality (Low/Medium/High/Maximum), automatic AI analysis, storage location, automatic and manual database backup.
+
+`[INSERT: assets_v2/screenshots/17_settings.png]`
+
+![Settings](assets_v2/screenshots/17_settings.png)
+
+---
+
+### 3.18 User Profile
+Practitioner profile management: email, department, specialization, medical license number. Secure password change.
+
+`[INSERT: assets_v2/screenshots/18_profile.png]`
+
+![User Profile](assets_v2/screenshots/18_profile.png)
+
+---
+
+### 3.19 Navigation Menu
+Side drawer with connected practitioner identification (Dr. Aissatou Diallo — DOCTOR). Quick access: Home, Patients, Reports, Statistics, Profile, Settings, Logout.
+
+`[INSERT: assets_v2/screenshots/19_navigation_drawer.png]`
+
+![Navigation Menu](assets_v2/screenshots/19_navigation_drawer.png)
 
 ---
 

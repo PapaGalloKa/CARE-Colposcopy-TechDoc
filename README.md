@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="C.A.R.E Logo" width="200"/>
+  <img src="assets_v2/logo.png" alt="C.A.R.E Logo" width="200"/>
 </p>
 
 <h1 align="center">C.A.R.E Colposcopy</h1>
@@ -29,9 +29,9 @@ L'application est concue pour etre deployee aussi bien sur des smartphones et ta
 
 La video ci-dessous presente une demonstration complete de l'application, montrant l'ensemble du parcours utilisateur :
 
-**[Voir la demonstration video](assets/demo.mp4)**
+**[Voir la demonstration video](assets_v2/demo.mp4)**
 
-> *Duree : 5 minutes | Navigation complete de l'application : connexion, gestion des patients, capture d'images avec filtre vert, annotation medicale, generation de rapport, statistiques.*
+> *Duree : 4 min 30 | Navigation complete : connexion, gestion des patients, capture d'images avec filtre vert, annotation medicale, generation de rapport PDF, statistiques, parametres.*
 
 ---
 
@@ -40,108 +40,171 @@ La video ci-dessous presente une demonstration complete de l'application, montra
 ### 3.1 Page de connexion
 Authentification securisee avec gestion multi-roles (Super Admin, Admin, Docteur, Assistant). Interface medicale professionnelle avec le branding C.A.R.E.
 
-`[INSERER : assets/screenshots/01_login.png]`
+`[INSERER : assets_v2/screenshots/01_login.png]`
 
-![Page de connexion](assets/screenshots/01_login.png)
+![Page de connexion](assets_v2/screenshots/01_login.png)
 
 ---
 
 ### 3.2 Tableau de bord
-Ecran d'accueil personnalise affichant le nom du praticien, sa specialite, et un acces rapide aux fonctions principales : Nouvel Examen, Patients, Rapports, Statistiques. Liste des examens recents en bas de page.
+Ecran d'accueil personnalise affichant le nom du praticien connecte (Dr. Aissatou Diallo — Gynecologie), avec acces rapide aux fonctions principales : Nouvel Examen, Patients, Rapports, Statistiques. Liste des examens recents en bas de page.
 
-`[INSERER : assets/screenshots/02_home.png]`
+`[INSERER : assets_v2/screenshots/02_home.png]`
 
-![Tableau de bord](assets/screenshots/02_home.png)
-
----
-
-### 3.3 Liste des patients
-Registre complet des patients avec recherche en temps reel, affichage du numero de dossier medical (MRN), date de naissance, et avatars personnalises. Bouton d'ajout rapide d'un nouveau patient.
-
-`[INSERER : assets/screenshots/03_patient_list.png]`
-
-![Liste des patients](assets/screenshots/03_patient_list.png)
+![Tableau de bord](assets_v2/screenshots/02_home.png)
 
 ---
 
-### 3.4 Interface camera avec filtre vert medical
-Capture d'images colposcopiques en temps reel. Le **filtre vert medical** (shader GPU OpenGL ES 3.0) amplifie le canal vert pour mieux visualiser les patterns vasculaires cervicaux — equivalent numerique du filtre optique vert utilise en colposcopie traditionnelle. Controles d'exposition, zoom, et intensite du filtre ajustables.
+### 3.3 Selection du patient
+Registre complet des patients avec recherche en temps reel par nom ou numero de dossier medical (MRN). Affichage des avatars, dates de naissance et identifiants. Bouton d'ajout rapide d'un nouveau patient.
 
-`[INSERER : assets/screenshots/04_camera_green_filter.png]`
+`[INSERER : assets_v2/screenshots/03_patient_list.png]`
 
-![Camera avec filtre vert](assets/screenshots/04_camera_green_filter.png)
-
----
-
-### 3.5 Galerie d'examen
-Visualisation des images capturees lors d'un examen. Selection multiple pour annotation groupee ou generation de rapport. Indication du nombre d'images et date de l'examen.
-
-`[INSERER : assets/screenshots/05_exam_gallery.png]`
-
-![Galerie d'examen](assets/screenshots/05_exam_gallery.png)
+![Selection du patient](assets_v2/screenshots/03_patient_list.png)
 
 ---
 
-### 3.6 Outils d'annotation medicale
-Suite complete d'outils d'annotation : cercle, ligne, dessin libre, rectangle, mesures (en mm), et texte. Palette de couleurs et epaisseur de trait parametrables. Bouton d'**analyse IA** integre pour la detection automatique des lesions.
+### 3.4 Interface camera — vue normale
+Capture d'images colposcopiques en temps reel avec controles lateraux : LED (eclairage), Filtre vert, Zoom, Exposition. Barre d'etat en bas affichant le mode, le nombre d'images capturees et le MRN du patient.
 
-`[INSERER : assets/screenshots/06_annotation.png]`
+`[INSERER : assets_v2/screenshots/04_camera.png]`
 
-![Annotation medicale](assets/screenshots/06_annotation.png)
-
----
-
-### 3.7 Generation de rapport
-Formulaire structure de generation de rapport colposcopique : informations patient, indication clinique, apparence cervicale, zone de transformation, resultats a l'acide acetique et a l'iode, patterns vasculaires, impressions, biopsie, et recommandations.
-
-`[INSERER : assets/screenshots/07_report_generation.png]`
-
-![Generation de rapport](assets/screenshots/07_report_generation.png)
+![Camera vue normale](assets_v2/screenshots/04_camera.png)
 
 ---
 
-### 3.8 Rapport PDF genere
-Apercu du rapport PDF genere automatiquement, incluant les informations du patient, les constatations cliniques, et les images annotees. Format professionnel avec en-tete C.A.R.E.
+### 3.5 Interface camera — filtre vert medical
+Le **filtre vert medical** (shader GPU OpenGL ES 3.0) amplifie le canal vert pour mieux visualiser les patterns vasculaires cervicaux — equivalent numerique du filtre optique vert utilise en colposcopie traditionnelle. Curseur d'intensite du filtre (Green Level) ajustable en temps reel.
 
-`[INSERER : assets/screenshots/08_report_pdf.png]`
+`[INSERER : assets_v2/screenshots/05_camera_green_filter.png]`
 
-![Rapport PDF](assets/screenshots/08_report_pdf.png)
-
----
-
-### 3.9 Fiche patient detaillee
-Dossier patient complet avec onglets : Informations de contact, Informations medicales (allergies, medicaments, antecedents), Informations gynecologiques (derniere periode menstruelle, statut de grossesse, methode contraceptive). Acces direct a la galerie d'images et aux rapports du patient.
-
-`[INSERER : assets/screenshots/09_patient_detail.png]`
-
-![Fiche patient](assets/screenshots/09_patient_detail.png)
+![Camera filtre vert](assets_v2/screenshots/05_camera_green_filter.png)
 
 ---
 
-### 3.10 Statistiques et graphiques
-Tableaux de bord analytiques avec : distribution des types de lesions (graphique circulaire), tendances de confiance IA (courbe temporelle), distribution d'age des patients (histogramme). Donnees exploitables pour le suivi epidemiologique.
+### 3.6 Capture d'image
+Apres la prise de photo, une vignette s'affiche en bas a droite confirmant la capture. Le compteur d'images est mis a jour en temps reel dans la barre d'etat.
 
-`[INSERER : assets/screenshots/10_statistics.png]`
+`[INSERER : assets_v2/screenshots/06_camera_capture.png]`
 
-![Statistiques](assets/screenshots/10_statistics.png)
-
----
-
-### 3.11 Profil utilisateur
-Gestion du profil du praticien : email, departement, specialisation, numero de licence medicale. Possibilite de changement de mot de passe securise.
-
-`[INSERER : assets/screenshots/11_profile.png]`
-
-![Profil utilisateur](assets/screenshots/11_profile.png)
+![Capture d'image](assets_v2/screenshots/06_camera_capture.png)
 
 ---
 
-### 3.12 Menu de navigation
-Tiroir de navigation lateral avec acces rapide a toutes les sections de l'application. Identification du praticien connecte et son role. Option de deconnexion.
+### 3.7 Galerie d'examen
+Visualisation des images capturees lors d'un examen. Selection multiple pour annotation groupee ou generation de rapport. Boutons d'action : Annoter, Rapport, Supprimer.
 
-`[INSERER : assets/screenshots/12_navigation_drawer.png]`
+`[INSERER : assets_v2/screenshots/07_exam_gallery.png]`
 
-![Menu de navigation](assets/screenshots/12_navigation_drawer.png)
+![Galerie d'examen](assets_v2/screenshots/07_exam_gallery.png)
+
+---
+
+### 3.8 Annotation medicale — mesures
+Suite d'outils d'annotation avec mesures en millimetres : cercles pour delimiter les zones d'interet, lignes de mesure, et marqueurs. Bouton d'**analyse IA** integre.
+
+`[INSERER : assets_v2/screenshots/08_annotation.png]`
+
+![Annotation mesures](assets_v2/screenshots/08_annotation.png)
+
+---
+
+### 3.9 Annotation medicale — outils complets
+Barre d'outils complete : Cercle, Ligne, Dessin libre, Rectangle, Mesures, Texte. Palette de couleurs (rouge, bleu, vert, jaune, noir) et epaisseur de trait parametrables. Ici : annotation textuelle « lesion 1 » avec rectangle de delimitation et mesures.
+
+`[INSERER : assets_v2/screenshots/09_annotation_tools.png]`
+
+![Annotation outils](assets_v2/screenshots/09_annotation_tools.png)
+
+---
+
+### 3.10 Generation de rapport
+Formulaire structure de rapport colposcopique : informations patient (nom, DOB, MRN, telephone, email), indication clinique, apparence cervicale, zone de transformation (type 1/2/3), resultats a l'acide acetique et a l'iode, patterns vasculaires.
+
+`[INSERER : assets_v2/screenshots/10_report_generation.png]`
+
+![Generation de rapport](assets_v2/screenshots/10_report_generation.png)
+
+---
+
+### 3.11 Rapport PDF genere
+Apercu du rapport PDF genere automatiquement au format C.A.R.E. Contient les informations du patient, les constatations cliniques, et les images annotees. Ouverture directe dans le navigateur.
+
+`[INSERER : assets_v2/screenshots/11_report_pdf.png]`
+
+![Rapport PDF](assets_v2/screenshots/11_report_pdf.png)
+
+---
+
+### 3.12 Fiche patient detaillee
+Dossier patient complet avec onglets Info / Galerie / Rapports. Informations de contact, informations medicales (allergies, medicaments, antecedents), informations gynecologiques. Bouton « Demarrer un examen » pour lancer directement une colposcopie.
+
+`[INSERER : assets_v2/screenshots/12_patient_detail.png]`
+
+![Fiche patient](assets_v2/screenshots/12_patient_detail.png)
+
+---
+
+### 3.13 Galerie patient
+Onglet Galerie de la fiche patient affichant toutes les images capturees lors des differents examens, avec vignettes et annotations visibles.
+
+`[INSERER : assets_v2/screenshots/13_patient_gallery.png]`
+
+![Galerie patient](assets_v2/screenshots/13_patient_gallery.png)
+
+---
+
+### 3.14 Rapports du patient
+Acces aux rapports generes pour un patient avec options : Ouvrir, Partager, Supprimer.
+
+`[INSERER : assets_v2/screenshots/14_patient_report.png]`
+
+![Rapports patient](assets_v2/screenshots/14_patient_report.png)
+
+---
+
+### 3.15 Edition du dossier patient
+Formulaire d'edition complet des informations gynecologiques : derniere periode menstruelle, statut de grossesse, methode contraceptive, frottis Pap anterieur, colposcopie anterieure, antecedents familiaux de cancer.
+
+`[INSERER : assets_v2/screenshots/15_edit_patient.png]`
+
+![Edition patient](assets_v2/screenshots/15_edit_patient.png)
+
+---
+
+### 3.16 Statistiques
+Tableaux de bord analytiques : compteurs (patients, examens, taux d'anomalies), examens par mois (graphique barres), distribution des lesions (graphique circulaire), tendances de confiance IA, distribution d'age.
+
+`[INSERER : assets_v2/screenshots/16_statistics.png]`
+
+![Statistiques](assets_v2/screenshots/16_statistics.png)
+
+---
+
+### 3.17 Parametres
+Configuration de l'application : langue (Francais/Anglais), qualite d'image (Low/Medium/High/Maximum), analyse IA automatique, emplacement de stockage, sauvegarde automatique et manuelle de la base de donnees.
+
+`[INSERER : assets_v2/screenshots/17_settings.png]`
+
+![Parametres](assets_v2/screenshots/17_settings.png)
+
+---
+
+### 3.18 Profil utilisateur
+Gestion du profil du praticien : email, departement, specialisation, numero de licence medicale. Changement de mot de passe securise.
+
+`[INSERER : assets_v2/screenshots/18_profile.png]`
+
+![Profil utilisateur](assets_v2/screenshots/18_profile.png)
+
+---
+
+### 3.19 Menu de navigation
+Tiroir lateral avec identification du praticien connecte (Dr. Aissatou Diallo — DOCTOR). Acces rapide : Accueil, Patients, Rapports, Statistiques, Profil, Parametres, Deconnexion.
+
+`[INSERER : assets_v2/screenshots/19_navigation_drawer.png]`
+
+![Menu de navigation](assets_v2/screenshots/19_navigation_drawer.png)
 
 ---
 
