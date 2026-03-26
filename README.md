@@ -164,7 +164,7 @@ Acces aux rapports generes pour un patient avec options : Ouvrir, Partager, Supp
 ---
 
 ### 3.15 Edition du dossier patient
-Formulaire d'edition complet des informations gynecologiques : derniere periode menstruelle, statut de grossesse, methode contraceptive, frottis Pap anterieur, colposcopie anterieure, antecedents familiaux de cancer.
+Formulaire d'edition complet des informations personnelles du patient : nom, prenom, date de naissance, telephone, email, adresse, numero de dossier medical (MRN). Interface structuree avec champs valides et icones contextuelles.
 
 `[INSERER : assets_v2/screenshots/15_edit_patient.png]`
 

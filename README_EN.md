@@ -164,7 +164,7 @@ Access to generated reports for a patient with options: Open, Share, Delete.
 ---
 
 ### 3.15 Patient Record Editing
-Complete editing form for gynecological information: last menstrual period, pregnancy status, contraceptive method, previous Pap smear, previous colposcopy, family history of cancer.
+Complete editing form for patient personal information: first name, last name, date of birth, phone, email, address, medical record number (MRN). Structured interface with validated fields and contextual icons.
 
 `[INSERT: assets_v2/screenshots/15_edit_patient.png]`
 
